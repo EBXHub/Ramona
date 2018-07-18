@@ -1,26 +1,60 @@
 $(document).ready(function () {
 
 
-    /* Navigation scroll */
-
+    /* Sticky Navigation */
+	$('.js--nav').waypoint(function(direction) {
+		if(direction == 'down') {
+		   $('nav').addClass('sticky');
+		} else {
+			$('nav').removeClass('sticky');
+		}
+	})
+	
+	// Products slider
+	$('#slider').owlCarousel({
+		margin: 0,
+		items: 5,
+		navigation: true,
+		navText: ["<ion-icon name=\"ios-arrow-back\"></ion-icon>", "<ion-icon name=\"ios-arrow-forward\"></ion-icon>"],
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:5
+			}
+		}
+	});
+	
+	 var owl = $('.owl-carousel');
+        owl.owlCarousel();
+        // Go to the next item
+        $('.owl-next').click(function() {
+            owl.trigger('next.owl.carousel');
+        })
+        // Go to the previous item
+        $('.owl-prev').click(function() {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owl.trigger('prev.owl.carousel', [300]);
+    });
+	
     // Select all links with hashes
     $('a[href*="#"]')
-      // Remove links that don't actually link to anything
       .not('[href="#"]')
       .not('[href="#0"]')
       .click(function (event) {
-        // On-page links
         if (
           location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
           &&
           location.hostname == this.hostname
         ) {
-          // Figure out element to scroll to
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
           if (target.length) {
-            // Only prevent default if animation is actually gonna happen
             event.preventDefault();
             $('html, body').animate({
               scrollTop: target.offset().top
@@ -29,11 +63,11 @@ $(document).ready(function () {
               // Must change focus!
               var $target = $(target);
               $target.focus();
-              if ($target.is(":focus")) { // Checking if the target was focused
+              if ($target.is(":focus")) {
                 return false;
               } else {
-                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
+                $target.attr('tabindex','-1'); 
+                $target.focus(); 
               };
             });
           }
@@ -79,5 +113,53 @@ $(document).ready(function () {
 			}
 		});
 	});
-
+	
 });
+
+setTimeout(function() {
+	var popup_box = document.getElementById('popup-box');
+	popup_box.style.display = 'block';	
+},
+   3000);
+
+function close_popup() {
+	var popup_box = document.getElementById('popup-box');
+	if(popup_box.style.display === 'none') {
+		popup_box.style.display = 'block';
+	} else {
+		popup_box.style.display = 'none';
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
