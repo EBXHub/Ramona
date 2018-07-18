@@ -3,28 +3,26 @@
     <head>
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Velvet Central is a online platform for designers to thrive by reaching new audiences and we pride ourselves on selling unique, inspiring products on behalf of the serbian's best independent brands.">
+		<meta name="description" content="Velvet Central is a online platform for designers to thrive by reaching new audiences and we pride ourselves on selling unique, inspiring products on behalf of the region's best independent brands.">
         <title>Velvet Central</title>
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/owl.carousel.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-		<link rel="stylesheet" type="text/css" href="vendors/css/util.css">
-		<link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="vendors/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="vendors/fonts/iconic/css/material-design-iconic-font.min.css">
-		<link rel="stylesheet" type="text/css" href="vendors/fonts/linearicons-v1.0.0/icon-font.min.css">
-		<link rel="stylesheet" type="text/css" href="vendors/perfect-scrollbar/perfect-scrollbar.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,300i,400,400i,500,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
+        
         <!--[if IE]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
             </script>
         <![endif]-->
-
+		
 		<script>
 			function goTo(x) {
 				 var image = document.getElementById('img');
@@ -60,7 +58,7 @@
 						if (i == imagecounter) {
 							elem.setAttribute("src", "resources/css/images/circle1.png");
 						}else{
-							elem.setAttribute("src", "resources/css/images/circle0.png");
+							elem.setAttribute("src", "resources/css/images/circle0.png");  
 						}
 						buttons.appendChild(elem);
 						}
@@ -68,6 +66,25 @@
 		</script>
     </head>
 	<body>
+		<div id="popup-box" class="popup-position">
+			<div id="popup-wrapper">
+				<div id="popup-content" class="clearfix">
+					<div class="left-column">
+						<img src="resources/images/popup-image.jpg" alt="Popup_Image">
+					</div>
+					<div class="right-column">
+						<h3>Get 10% off <br><span> by signing up to our newsletter</span></h3>
+						<p class="popup-p">Enter your email to get 10% off, special offers and the latest from our designers.</p>
+						<label for="popup-email" class="popup-label">
+							<input type="email" name="popup-email" id="popup-email" placeholder="ENTER EMAIL">
+							<input type="submit" name="submit" id="popup-submit" value="SIGN ME UP">
+						</label>
+						<p class="popup-notice-p">Find out more, please read our <a href="#">Privacy Notice</a></p>
+						<a href="javascript:void(0)" onclick="close_popup()" class="popup-close"><ion-icon name="close"></ion-icon></a>
+					</div>
+				</div><!-- end #popup-content -->
+			</div><!-- end #popup-wrapper -->
+		</div><!-- end #popup-box -->
 		<a name="top"></a>
 		<header id="header">
 			<div class="top-nav">
@@ -76,22 +93,23 @@
 						<ul class="top-social-links">
 							<li><a href="#"><i class="ion-social-facebook"></i></a></li>
                         	<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+							<li><a href="#"><i class="ion-social-youtube"></i></a></li>
                         	<li><a href="#"><i class="ion-social-instagram"></i></a></li>
 						</ul>
 					</div><!-- end .top-nav-social -->
-					<p class="topP">Free shipping for standard order over $100</p>
-					<div class="wrap-icon-header flex-w flex-r-m">
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+					<p class="topP">Free domestic delivery</p>
+					<div class="wrap-icon-header">
+						<div class="search">
 							<i class="zmdi zmdi-search"></i>
-						</div>
-
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
+						</div><!-- end .search -->
+						<div class="cart">
 							<i class="zmdi zmdi-shopping-cart"></i>
-						</div>
-
-						<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
-							<i class="zmdi zmdi-favorite-outline"></i>
-						</a>
+						</div><!-- end .cart -->
+						<div class="wish-list">	
+							<a href="#">
+								<i class="zmdi zmdi-favorite-outline"></i>
+							</a>
+						</div><!-- end .wish-list -->
 					</div><!-- end .wrap-icon-header -->
 				</div><!-- end .row -->
 			</div><!-- end .top-nav -->
@@ -100,18 +118,11 @@
 					<img src="resources/images/logo.png" alt="Velvet_Central_logo">
 				</a>
 			</div>
-			<nav id="nav">
+			<nav id="nav" class="js--nav">
 				<div class="row">
+					<img src="resources/images/logo.png" alt="Velvet_Central_logo" class="sticky-logo">
 					<ul class="main-nav">
 						<li><a href="index.html">New</a></li>
-						<li><a href="blog.html">Designers</a>
-							<ul>
-								<li><a href="#">Designers&nbsp;1</a></li>
-								<li><a href="#">Designers&nbsp;2</a></li>
-								<li><a href="#">Designers&nbsp;3</a></li>
-								<li><a href="#">Designers&nbsp;4</a></li>
-							</ul>
-						</li>
 						<li><a href="#">Clothing</a>
 							<ul>
 								<li><a href="#">Clothing&nbsp;1</a></li>
@@ -122,7 +133,15 @@
 						</li>
 						<li><a href="#">Intimates</a></li>
 						<li><a href="#">Accessories</a></li>
-						<li><a href="#">Beaty &amp; Wellness</a></li>
+						<li><a href="#">Designers</a>
+							<ul>
+								<li><a href="#">Designers&nbsp;1</a></li>
+								<li><a href="#">Designers&nbsp;2</a></li>
+								<li><a href="#">Designers&nbsp;3</a></li>
+								<li><a href="#">Designers&nbsp;4</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Beauty &amp; Wellness</a></li>
 						<li><a href="#">Home &amp; Living</a></li>
 						<li><a href="#">Discover more</a>
 							<ul>
@@ -131,29 +150,39 @@
 							</ul>
 						</li>
 					</ul>
+					<div class="sticky-icon wrap-icon-header">
+						<div class="search">
+							<i class="zmdi zmdi-search"></i>
+						</div><!-- end .search -->
+						<div class="cart">
+							<i class="zmdi zmdi-shopping-cart"></i>
+						</div><!-- end .cart -->
+						<div class="wish-list">	
+							<a href="#">
+								<i class="zmdi zmdi-favorite-outline"></i>
+							</a>
+						</div><!-- end .wish-list -->
+					</div><!-- end .wrap-icon-header -->
 				</div> <!-- end .row -->
 			</nav>
-			<div class="row">
-				<div id="wrap">
-            		<div id="container">
-                		<img id="img" src="resources/css/images/image1.jpg"/>
-                		<div id="left_holder"><img onclick="slide(-1)" id="left" src="resources/css/images/arrow_left.png"/></div>
-                		<div id="right_holder"><img onclick="slide(+1)" id="right" src="resources/css/images/arrow_right.png"/></div>
-
-            			<div id="buttons">
-							<img src="resources/css/images/circle1.png" />
-							<img src="resources/css/images/circle0.png" />
-							<img src="resources/css/images/circle0.png" />
-							<img src="resources/css/images/circle0.png" />
-							<img src="resources/css/images/circle0.png" />
-            			</div>
-        			</div>
-					<script type="text/javascript">
-						var arrowL = document.getElementById('left');
-						var arrowR = document.getElementById('right');
-						var p = document.getElementById('p');
-						var text = document.getElementById('text');
-						var btn = document.getElementById('btn');
+			<div id="wrap">
+            	<div id="container">
+                	<img id="img" src="resources/css/images/image1.jpg"/>
+                	<div id="left_holder"><img onclick="slide(-1)" id="left" src="resources/css/images/arrow_left.png"/></div>
+                	<div id="right_holder"><img onclick="slide(+1)" id="right" src="resources/css/images/arrow_right.png"/></div>
+            
+            		<div id="buttons">
+						<img src="resources/css/images/circle1.png" />
+						<img src="resources/css/images/circle0.png" />
+						<img src="resources/css/images/circle0.png" />
+            		</div>
+        		</div>
+				<script type="text/javascript">
+					var arrowL = document.getElementById('left');
+					var arrowR = document.getElementById('right');
+					var p = document.getElementById('p');
+					var text = document.getElementById('text');
+					var btn = document.getElementById('btn');
 
 						arrowL.style.visibility="hidden";
 						arrowR.style.visibility="hidden";
@@ -183,104 +212,235 @@
 							arrowR.style.visibility="hidden";
 							timerid = setInterval(slide, 5000);
 							})
-					</script>
-				</div><!-- end #wrap -->
-			</div><!-- end .row -->
-			<!--
-			<div class="down">
-				<img src="resources/images/double_arrow.png" alt="scroll-arrow" class="scroll-arrow">
-				<p class="scroll">Scroll to see more</p>
-			</div> <!-- end .down -->
+				</script>
+			</div><!-- end #wrap -->
 		</header>
 		<section class="section-offers">
 			<div class="row">
-				<div class="col span-1-of-4 box">
+				<p class="long-copy">Vestibulum sit amet blandit sem. Sed laoreet quam at velit cursus imperdiet. Nullam et nulla facilisis, sollicitudin lorem vel, pretium metus. Quisque augue tortor, venenatis eu auctor quis, finibus eget erat. Fusce a tellus efficitur, pharetra arcu ac, rutrum velit. Donec eleifend placerat varius. Aliquam quis est dictum, pulvinar tortor at, maximus urna. Vestibulum non placerat libero. Pellentesque eget condimentum turpis. Phasellus et quam at ligula tristique condimentum eu et magna.</p>
+			</div><!-- end .row -->
+			<div class="row js--wp-1">
+				<div class="col span-1-of-3 box">
 					<img src="resources/images/img1.jpg" alt="">
-					<a href="#" class="offers-link">Beuty &amp; Welness</a>
+					<a href="#" class="btn-black">Clothing</a>
 				</div>
-				<div class="col span-1-of-4 box">
+				<div class="col span-1-of-3 box">
 					<img src="resources/images/img2.jpg" alt="">
-					<a href="#" class="offers-link">New</a>
+					<a href="#" class="btn-black">Accessories</a>
 				</div>
-				<div class="col span-1-of-4 box">
+				<div class="col span-1-of-3 box">
 					<img src="resources/images/img3.jpg" alt="">
-					<a href="#" class="offers-link">Bags</a>
+					<a href="#" class="btn-black">Designers</a>
 				</div>
-				<div class="col span-1-of-4 box">
+			</div><!-- end .row -->
+			<div class="row js--wp-3">
+				<div class="col span-1-of-3 box first-in-row">
 					<img src="resources/images/img4.jpg" alt="">
-					<a href="#" class="offers-link">Designers</a>
+					<a href="#" class="btn-black">Intimates</a>
 				</div>
-			</div><!-- end .row -->
-			<div class="row big-box">
-				<div class="col span-1-of-3">
+				<div class="col span-1-of-3 box">
 					<img src="resources/images/img5.jpg" alt="">
-					<a href="#" class="offers-link">Clothing</a>
-				</div>
-				<div class="col span-1-of-3">
-					<img src="resources/images/img6.jpg" alt="">
-					<a href="#" class="offers-link">Home &amp; Living</a>
-				</div>
-				<div class="col span-1-of-3">
-					<img src="resources/images/img7.jpg" alt="">
-					<a href="#" class="offers-link">Accessories</a>
-				</div>
+					<a href="#" class="btn-black">New</a>
+				</div>	
 			</div><!-- end .row -->
-		</section>
-		<section class="section-special-offer">
-			<div class="row special">
-				<p class="promoP">Up to 60% off</p>
-				<h2>The semi-annual <span>sale!</span></h2>
-				<p class="long-copy">Aliquam elit libero, fermentum a auctor at, malesuada a dolor. Proin non ante accumsan, consequat sapien quis, ultrices nisl. In et facilisis diam. Nullam feugiat bibendum sollicitudin. Etiam dignissim lectus ex, a tincidunt diam malesuada ut. Proin ac dignissim sapien, id imperdiet orci. Etiam sapien odio, consequat non arcu eu, elementum ultricies quam. Maecenas pharetra tempor urna ut sollicitudin.</p>
-				<a href="#" class="btn btn-full">Shop now</a>
+		</section>	
+		<section class="section-arrivals">
+			<div class="row" js--wp-4>
+				<h2 class="arrivalsH">New Arrivals</h2>
+			</div><!-- end .row -->
+			<div class="row">
+				<div class="recomender-products">
+					<div class="slider clearfix">
+						<p class="slide-pointer owl-prev"><ion-icon name="ios-arrow-back"></ion-icon></p>
+						<div class="products owl-carousel owl-theme" id="slider">
+							<div class="product-summary item">
+								<div class="product-image">
+									<a href="#">
+										<div class="square-wrap-img">
+											<img src="resources/images/slide_img1.jpg" alt="Product">
+										</div><!-- end .square-wrap-img -->
+									</a>
+									<div class="rollover">
+									</div><!-- end .rollover -->
+								</div><!-- end .product-image -->
+								<div class="product-name-and-designer">
+									<a href="#"><p>Product name</p></a>
+									<a href="#"><span>Designer name</span></a>
+								</div><!-- end .product-name-and-designer -->
+								<p>$450</p>
+							</div><!-- end .product-summary -->
+							<div class="product-summary item">
+								<div class="product-image">
+									<a href="#">
+										<div class="square-wrap-img">
+											<img src="resources/images/slide_img2.jpg" alt="Product">
+										</div><!-- end .square-wrap-img -->
+									</a>
+									<div class="rollover">
+									</div><!-- end .rollover -->
+								</div><!-- end .product-image -->
+								<div class="product-name-and-designer">
+									<a href="#"><p>Product name</p></a>
+									<a href="#"><span>Designer name</span></a>
+								</div><!-- end .product-name-and-designer -->
+								<p>$345</p>
+							</div><!-- end .product-summary -->
+							<div class="product-summary item">
+								<div class="product-image">
+									<a href="#">
+										<div class="square-wrap-img">
+											<img src="resources/images/slide_img3.jpg" alt="Product">
+										</div><!-- end .square-wrap-img -->
+									</a>
+									<div class="rollover">
+									</div><!-- end .rollover -->
+								</div><!-- end .product-image -->
+								<div class="product-name-and-designer">
+									<a href="#"><p>Product name</p></a>
+									<a href="#"><span>Designer name</span></a>
+								</div><!-- end .product-name-and-designer -->
+								<p>$45</p>
+							</div><!-- end .product-summary -->
+							<div class="product-summary item">
+								<div class="product-image">
+									<a href="#">
+										<div class="square-wrap-img">
+											<img src="resources/images/slide_img4.jpg" alt="Product">
+										</div><!-- end .square-wrap-img -->
+									</a>
+									<div class="rollover">
+									</div><!-- end .rollover -->
+								</div><!-- end .product-image -->
+								<div class="product-name-and-designer">
+									<a href="#"><p>Product name</p></a>
+									<a href="#"><span>Designer name</span></a>
+								</div><!-- end .product-name-and-designer -->
+								<p>$245</p>
+							</div><!-- end .product-summary -->
+							<div class="product-summary item">
+								<div class="product-image">
+									<a href="#">
+										<div class="square-wrap-img">
+											<img src="resources/images/slide_img5.jpg" alt="Product">
+										</div><!-- end .square-wrap-img -->
+									</a>
+									<div class="rollover">
+									</div><!-- end .rollover -->
+								</div><!-- end .product-image -->
+								<div class="product-name-and-designer">
+									<a href="#"><p>Product name</p></a>
+									<a href="#"><span>Designer name</span></a>
+								</div><!-- end .product-name-and-designer -->
+								<p>$145</p>
+							</div><!-- end .product-summary -->
+							<div class="product-summary item">
+								<div class="product-image">
+									<a href="#">
+										<div class="square-wrap-img">
+											<img src="resources/images/slide_img6.jpg" alt="Product">
+										</div><!-- end .square-wrap-img -->
+									</a>
+									<div class="rollover">
+									</div><!-- end .rollover -->
+								</div><!-- end .product-image -->
+								<div class="product-name-and-designer">
+									<a href="#"><p>Product name</p></a>
+									<a href="#"><span>Designer name</span></a>
+								</div><!-- end .product-name-and-designer -->
+								<p>$405</p>
+							</div><!-- end .product-summary -->
+							<div class="product-summary item">
+								<div class="product-image">
+									<a href="#">
+										<div class="square-wrap-img">
+											<img src="resources/images/slide_img7.jpg" alt="Product">
+										</div><!-- end .square-wrap-img -->
+									</a>
+									<div class="rollover">
+									</div><!-- end .rollover -->
+								</div><!-- end .product-image -->
+								<div class="product-name-and-designer">
+									<a href="#"><p>Product name</p></a>
+									<a href="#"><span>Designer name</span></a>
+								</div><!-- end .product-name-and-designer -->
+								<p>$455</p>
+							</div><!-- end .product-summary -->
+							<div class="product-summary item">
+								<div class="product-image">
+									<a href="#">
+										<div class="square-wrap-img">
+											<img src="resources/images/slide_img8.jpg" alt="Product">
+										</div><!-- end .square-wrap-img -->
+									</a>
+									<div class="rollover">
+									</div><!-- end .rollover -->
+								</div><!-- end .product-image -->
+								<div class="product-name-and-designer">
+									<a href="#"><p>Product name</p></a>
+									<a href="#"><span>Designer name</span></a>
+								</div><!-- end .product-name-and-designer -->
+								<p>$499</p>
+							</div><!-- end .product-summary -->
+						</div><!-- end .products -->
+						<p class="slide-pointer owl-next"><ion-icon name="ios-arrow-forward"></ion-icon></p>
+					</div><!-- end .slider -->
+				</div><!-- end .recomended-products -->
 			</div><!-- end .row -->
 		</section>
 		<section class="section-promotion">
-			<div class="row">
+			<div class="row js--wp-2">
 				<div class="col span-1-of-2 promo-box">
 					<img src="resources/images/photo1.jpg" alt="Photo">
 					<div class="left">
-						<p class="promotionP">Special promotion</p>
-						<h2>New Year</h2>
-						<a href="#" class="btn btn-full">See it now</a>
+						<p class="promotionP">Beauty &amp; Wellnes</p>
+						<a href="#" class="btn-black">Shop beauty &amp; wellness</a>
 					</div>
 				</div>
 				<div class="col span-1-of-2 promo-box">
 					<img src="resources/images/photo2.jpg" alt="Photo">
 					<div class="right">
-						<p class="promotionP">Special promotion</p>
-						<h2>New Year</h2>
-						<a href="#" class="btn btn-ghost">See it now</a>
+						<p class="promotionP">Home &amp; Living</p>
+						<a href="#" class="btn-black">Shop home &amp; living</a>
 					</div>
 				</div>
+			</div><!-- end .row -->
+			<div class="row back">
+				<a href="#top" class="btn-top"><ion-icon name="ios-arrow-dropup" class="small-arrow"></ion-icon> back to top</a>
 			</div><!-- end .row -->
 		</section>
 		<section class="section-support">
 			<div class="row">
-				<div class="col span-1-of-3 support-box">
-					<i class="fas fa-globe-americas icon-big"></i>
-					<h3>Free shipping</h3>
-					<p class="supportP">Guaranteed Delivery in 4 Days</p>
+				<div class="col span-1-of-6 support-box">
+					<p class="supportP">Independent <br> designers</p>
+					<ion-icon name="ios-cut" class="icon-big"></ion-icon>
 				</div>
-				<div class="col span-1-of-3 support-box">
-					<i class="fas fa-dollar-sign icon-big"></i>
-					<h3>Money back guarantee</h3>
-					<p class="supportP">Send Within 30 Days</p>
+				<div class="col span-1-of-6 support-box">
+					<p class="supportP">Free returns <br> worldwide</p>
+					<ion-icon name="airplane" class="icon-big"></ion-icon>
 				</div>
-				<div class="col span-1-of-3 support-box">
-					<i class="fas fa-life-ring icon-big"></i>
-					<h3>Call for help</h3>
-					<p class="supportP">Call Us On +38160000000</p>
+				<div class="col span-1-of-6 support-box">
+					<p class="supportP">No animal testing <br> No fur</p>
+					<ion-icon name="ios-paw" class="icon-big correct1"></ion-icon>
 				</div>
-			</div><!-- end .row -->
-			<div class="row back">
-				<a href="#top" class="btn btn-ghost">Back to top</a>
+				<div class="col span-1-of-6 support-box">
+					<p class="supportP">Free domestic <br> delivery</p>
+					<i class="fas fa-truck icon-big correct"></i>
+				</div>
+				<div class="col span-1-of-6 support-box">
+					<p class="supportP">Secure <br> payment</p>
+					<ion-icon name="ios-lock" class="icon-big"></ion-icon>
+				</div>
+				<div class="col span-1-of-6 support-box">
+					<p class="supportP">Established <br> 2018</p>
+					<ion-icon name="ios-ribbon" class="icon-big"></ion-icon>
+				</div>
 			</div><!-- end .row -->
 		</section>
 		<footer id="footer">
 			<div class="row">
 				<div class="newsletter">
-					<h3>Stay tunned</h3>
-					<p>Sign up to our newsletter and be the first to hear the latest offers, events, news and updates from Velvet Central.</p>
+					<h3>Don't Miss Out</h3>
+					<p class="news-p">Sign up to our newsletter and be the first to know about our offers, special promotions, news and updates from Velvet Central. If you're interested in showcasing your desing <a href="#">click here</a>.</p>
 					<form>
 						<input type="text" id="name" placeholder="Your Name">
 						<input type="email" id="email" placeholder="Your Email">
@@ -289,7 +449,7 @@
 				</div><!-- end .newsletter -->
 			</div><!-- end .row -->
 			<div class="row">
-				<div class="col span-1-of-3">
+				<div class="col span-1-of-3 contact-box">
 					<h4>Contact</h4>
 					<p class="contactP"><ion-icon name="call" class="icon-small"></ion-icon> +381 60 000 0000</p>
 					<p class="contactP"><ion-icon name="mail" class="icon-small"></ion-icon> support@velvetcentral.com</p>
@@ -329,15 +489,20 @@
 								<li><a href="#">Blog</a></li>
 							</ul>
 						</div>
-					</div><!-- end .row -->
-				</div>
+					</div>
+				</div><!-- end .row -->
 			</div><!-- end .row -->
 			<div class="row">
-				<p class="finalP">&copy; Velvet Central | <a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a></p>
+				<p class="finalP">&copy; 2018 Velvet Central | <a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a></p>
+			</div><!-- end .row -->
+			<div class="row">
+				<p class="finalP">Powered by <a href="http://www.ebxsolution.com">EBX solution</a></p>
 			</div><!-- end .row -->
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="vendors/select2/select2.min.js"></script>
+		<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+		<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+		<script src="vendors/js/owl.carousel.js"></script>
 		<script src="vendors/js/jquery.waypoints.min.js"></script>
 		<script src="resources/js/script.js"></script>
 	</body>
