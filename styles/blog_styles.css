@@ -1252,7 +1252,7 @@ select option
 
 .blog
 {
-	padding-top: 80px;
+	padding-top: 20px;
 	padding-bottom: 100px;
 	background: #FFFFFF;
 }
@@ -1336,4 +1336,14 @@ font-size: 16px;
 	color: #FFFFFF;
 	line-height: 48px;
 	font-size: 18px;
+}
+
+
+/*hover dizajners  */
+
+.skriveno{
+  visibility: hidden;
+}
+  .wrap-pic-w :hover   .skriveno{
+  visibility: visible;
 }
