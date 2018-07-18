@@ -1295,48 +1295,14 @@ select option
 {
 	font-family: futura-pt,sans-serif;
 font-weight: 400;
-font-size: 16px;
+font-size: 14px;
 	padding-left: 31px;
 	padding-right: 31px;
 	padding-top: 21px;
 	padding-bottom: 30px;
 
 }
-.blog_button
-{
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 48px;
-	background: #0e8ce4;
-	text-align: center;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.blog_button:hover
-{
-	background: #0982d7;
-}
-.blog_post:hover .blog_button
-{
-	visibility: visible;
-	opacity: 1;
-}
-.blog_button a
-{
-	display: block;
-	color: #FFFFFF;
-	line-height: 48px;
-	font-size: 18px;
-}
+
 
 
 /*hover dizajners  */
@@ -1347,3 +1313,145 @@ font-size: 16px;
   .wrap-pic-w :hover   .skriveno{
   visibility: visible;
 }
+
+.linkBox {
+  	position: absolute;
+
+  	left: 0;
+  	height: 300px;
+  	text-align: center;
+  	padding: 40px 20px;
+  	width: 100%;
+  	background: rgba(255,255,255,0);
+  	font-size: 90%;
+  	-webkit-transition: 1s all ease;
+  	transition: 1s all ease;
+  	opacity: 0;
+}
+.linkBox2 i{
+	margin-left: 50px;
+}
+.linkBox2 {
+  	position: absolute;
+		top: 0;
+  	left: 0;
+  	height: 40px;
+
+  	padding: 10px;
+  	width: 100%;
+  	background: rgba(255,255,255,0);
+  	font-size: 90%;
+  	-webkit-transition: 1s all ease;
+  	transition: 1s all ease;
+  	opacity: 0;
+}
+.linkBox h3 {
+	font-size: 120%;
+	font-weight: 700;
+	font-family: 'Lato';
+	color: #333;
+	margin-top: 60px;
+}
+.linkBox p {
+	font-size: 90%;
+	font-weight: 700;
+	line-height: 145%;
+	color: #2196F3;
+}
+.linkBox2 h3 {
+	font-size: 70%;
+	font-weight: 700;
+	font-family: 'Lato';
+	color: #333;
+	margin-left: 0;
+}
+.linkBox2 p {
+	font-size: 90%;
+	font-weight: 700;
+	line-height: 145%;
+	color: #2196F3;
+}
+.small-box:hover .linkBox, .big-box:hover .linkBox, .smaller-box:hover .linkBox {
+  	background: #f4f4f5c2;
+  	border: 2px solid #f4921f;
+  	border-radius: 5px;
+  	bottom: 0;
+  	opacity: 1;
+}
+.small-box:hover .linkBox a, .big-box:hover .linkBox a, .smaller-box:hover .linkBox a {
+  	-webkit-animation: fadeInDown 3s;
+  	animation: fadeInDown 3s;
+}
+.small-box:hover .linkBox2, .big-box:hover .linkBox2, .smaller-box:hover .linkBox2 {
+  	background: #f4f4f5c2;
+  	border: 2px solid #f4921f;
+  	border-radius: 5px;
+  	bottom: 0;
+  	opacity: 1;
+}
+.small-box:hover .linkBox2 a, .big-box:hover .linkBox2 a, .smaller-box:hover .linkBox2 a {
+  	-webkit-animation: fadeInDown 3s;
+  	animation: fadeInDown 3s;
+}
+
+.linkBox2 cite {
+  	font-size: 80%;
+  	font-style: italic;
+}
+.linkBox2 .fa-smile {
+	font-size: 180%;
+	color: #333;
+	margin-top: 15%;
+}
+
+a.linkText:link, a.linkText:visited  {
+	font-family: kepler-std-caption;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #333;
+
+      width: 100%;
+      display: block;
+
+}
+
+a.linkText:hover, a.linkText:active  {
+      color: #333;
+}
+
+.centerdes{
+	    text-align: center;
+}
+
+.breadcrumb-item{
+	font-size: 14px;
+}
+
+.destitle{
+	color:#A7A5A6;
+	margin: 7px 0;
+}
+
+.dugme{
+	background-color: black;
+	color: white;
+	font-size: 13px;
+	padding: 10px;
+}
+/*
+.bradcumbContent .breadcrumb {
+		padding: 0;
+		background-color: transparent;
+		border-radius: 0;
+		margin-top: 10px;
+}
+
+.bradcumbContent .breadcrumb-item a,
+.bradcumbContent .breadcrumb-item {
+		color: #fff;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+} */
