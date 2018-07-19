@@ -13,18 +13,32 @@ $(document).ready(function () {
 	// Products slider
 	$('#slider').owlCarousel({
 		margin: 0,
+		//loop: true,
+		//width: 1050,
 		items: 5,
+		animateIn: 'fadeIn',
+    	mouseDrag: true,
+		touchDrag: true,
+		pullDrag: true,
 		navigation: true,
 		navText: ["<ion-icon name=\"ios-arrow-back\"></ion-icon>", "<ion-icon name=\"ios-arrow-forward\"></ion-icon>"],
+		responsiveClass:true,
 		responsive:{
 			0:{
-				items:1
+				items:1,
+				nav: true
 			},
-			600:{
-				items:3
+			560:{
+				items:2,
+				nav: true
 			},
-			1000:{
-				items:5
+			781: {
+				items:3,
+				nav: true
+			},
+			1024:{
+				items:4,
+				nav: true
 			}
 		}
 	});

@@ -2,20 +2,35 @@
 @media only screen and (max-width: 1200px) {
     .row { padding: 0 2%; }
 	#wrap { max-height: 700px; } 
+	.products { width: 840px; }
+	.slider { 
+		max-width: 100%;
+		margin: 0 auto;
+	}
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1170px) {
 
 	.sticky-logo {
 		height: 20px;
-		margin: 15px 15px 5px 0;
+		margin: 12px 15px 12px 0;
 	}
+	.sticky .main-nav { margin: 10px 15px 0 0; }
+	.sticky-icon.wrap-icon-header { margin-top: 15px; }
+	.section-offers { padding: 60px 0 80px; }
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
     body { font-size: 18px; }
+	#popup-wrapper {
+        width: 100%;
+        padding: 0 2%;
+    }
 	header { padding-bottom: 60px; }
+	.main-nav li { margin: 0 10px 0 0; }
+	.sticky .main-nav li {  margin: 0 5px 0 0; }
+	.main-nav li a:link, .main-nav li a:visited { font-size: 66%; }
     .section-offers, .section-arrivals { padding: 60px 0; }
 	.section-offers { padding-top: 20px; }
 	.section-promotion { padding: 60px 0 20px; }
@@ -42,7 +57,20 @@
 	}
 	input#name, input#email { height: 40px; }
 	.finalP:last-child { margin-top: 10px; }
+	.products { width: 630px; }
+	.popup-p { margin: 15px auto; }
+	.popup-notice-p {  margin: 15px 0; }
+	input#popup-email, input#popup-submit{
+		width: 100%;
+		margin-bottom: 5px;
+		display: block;
+		float: none;
+	}
 
+}
+
+@media only screen and (max-width: 780px) {
+	.products { width: 420px; }
 }
 
 
@@ -53,11 +81,11 @@
     section { padding: 30px 0; }
     
     .row { padding: 0 4%; }
+	.product-box { padding: 0 2%; }
     .col { 
         width: 100%;
         margin: 0 0 4% 0;
     }
-    
     .main-nav { display: none; }
     
     .mobile-nav-icon { display: inline-block; }
@@ -74,8 +102,7 @@
         border: 0;
         padding: 10px 0;
         font-size: 100%;
-    }
-    
+    } 
     .sticky .main-nav { margin: 10px 0 0 25px; }
     .sticky .main-nav li a:link, .sticky .main-nav li a:visited  {
         padding: 10px 0;
@@ -90,10 +117,27 @@
 		margin-left: 0; 
 		margin-bottom: 25px;
 	}
+	.box img { height: 360px; }
+	.promo-box:first-child, .promo-box:last-child { padding: 0 15%; }
+	.btn-black:link, .btn-black:visited {
+		display: block;
+		margin: 0 auto;
+		width: 75%;
+		font-size: 90%;
+	}
+	.box .btn-black { width: 140px!important;}
+	.supportP { font-size: 90%; }
+	.social-links { font-size: 120%; }
+	footer .col { text-align: center; }
+	form { width: 100%; }
+	input#submit { padding: 10px 5px; }
+	#buttons img { width: 10px; }
     
 }
 
-
+@media only screen and (max-width: 560px) {
+	.products { width: 210px; }
+}
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
@@ -103,6 +147,64 @@
         margin-top: 25px;
         margin-bottom: 40px;
     }
-    
+	.logo img {  width: 80%; }
+	.promotionP {
+		font-size: 100%;
+		margin: 15px 0 15px;
+	}
+	#wrap { max-height:  420px; }
+	.slide-pointer:first-child, .slide-pointer:last-child {
+		width: 45px;
+	}
+	.btn-black:link, .btn-black:visited { width: 100%; }
+	.promo-box:first-child, .promo-box:last-child { padding: 0; }
+	input#name, input#email {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	input#submit {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.left-column {
+		float: none; 
+		width: 100%;
+		margin: 0;
+		height: 250px;
+	}
+	.right-column {
+		float: none; 
+		width: 100%;
+		margin: 0;
+		height: auto;
+	}
+	a.popup-close:link, a.popup-close:visited { 
+		top: 50%;
+		right: 5%;
+	}
+	.right-column h3 {
+		margin: 10px 0 15px;
+		font-size: 100%;
+		line-height: 145%;
+	}
+	.popup-p { 
+		text-align: justify;
+		margin: 10px auto;
+	}
+	.popup-notice-p { margin: 10px 0 5px; }
+	.finalP { font-size: 80%; }
+
+}
+
+@media only screen and (max-width: 360px) {
+    .logo img {  width: 60%; }
+	.top-social-links li { margin: 0 5px 0 0; }
+	.topP {
+		text-align: left;
+		margin: 0;
+	}
+	.finalP { font-size: 70%; }
+	
 }
 
